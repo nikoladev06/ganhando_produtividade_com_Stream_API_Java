@@ -19,7 +19,6 @@ public class SupplierExemplo {
         //OLD: List<String> listaSaudacoes = Stream.generate(saudacao).limit(5).toList();
         List<String> listaSaudacoes = Stream.generate(() -> "Olá, seja bem vindo(a)!")
                 .limit(5).toList();
-
         //Imprimir as saudações geradas
         //OLD: listaSaudacoes.forEach(s -> System.out.println(s));
         listaSaudacoes.forEach(System.out::println);
